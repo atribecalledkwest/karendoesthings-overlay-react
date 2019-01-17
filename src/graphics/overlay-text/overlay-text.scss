@@ -1,0 +1,24 @@
+@import '../base.scss';
+
+body {
+	width: $width;
+	height: $height;
+}
+
+.overlay-text {
+	font-size: $branding-text;
+	font-weight: bold;
+	padding: 0px;
+	color: $text-color;
+	.fixed-text {
+		position: fixed;
+		left: 23px;
+		bottom: 15px;
+		z-index: 2;
+		.border {
+			-webkit-text-stroke: 12px $text-border-color;
+			z-index: 1;
+			@include shadow();
+		}
+	}
+}

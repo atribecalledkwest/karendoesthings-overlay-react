@@ -13,7 +13,8 @@
                 "file": "overlay-text.html",
                 "width": 1920,
                 "height": 1080
-            }, {
+            },
+            {
                 "file": "now-playing.html",
                 "width": 1920,
                 "height": 123
@@ -27,6 +28,7 @@
     },
     "dependencies": {
         "gsap": "^2.0.2",
+        "lastfm": "github:atribecalledkwest/lastfm-node",
         "react": "^16.7.0",
         "react-dom": "^16.7.0"
     },

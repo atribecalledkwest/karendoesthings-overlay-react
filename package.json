@@ -1,5 +1,5 @@
 {
-    "name": "karendoesthings-overlay",
+    "name": "karendoesthings-overlay-react",
     "version": "0.0.1a",
     "description": "An attempt at making a NodeCG overlay in React.",
     "author": {

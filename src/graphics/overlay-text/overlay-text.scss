@@ -1,24 +1,25 @@
 @import '../base.scss';
 
 body {
-	width: $width;
-	height: $height;
+    width: $width;
+    height: $height;
+    font-family: $font;
 }
 
 .overlay-text {
-	font-size: $branding-text;
-	font-weight: bold;
-	padding: 0px;
-	color: $text-color;
-	.fixed-text {
-		position: fixed;
-		left: 23px;
-		bottom: 15px;
-		z-index: 2;
-		.border {
-			-webkit-text-stroke: 12px $text-border-color;
-			z-index: 1;
-			@include shadow();
-		}
-	}
+    font-size: $branding-text;
+    font-weight: bold;
+    padding: 0px;
+    color: $text-color;
+    .fixed-text {
+        position: fixed;
+        left: 23px;
+        bottom: 15px;
+        z-index: 2;
+        &.border {
+            @include stroke(12px, $text-border-color);
+            z-index: 1 !important;
+            @include shadow();
+        }
+    }
 }

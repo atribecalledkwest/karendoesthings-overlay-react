@@ -1,14 +1,24 @@
+// We use Oswald Bold as our Brand™'s font
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700&subset=latin-ext');
+$font: "Oswald", "Helvetica", sans-serif;
 // This is used for our branding text and any text that might be placed in the background-layer text
 $text-color: #ffecff;
 $text-border-color: #e15e87;
+// Text stroke stuff
+@mixin stroke($w, $c) {
+    -webkit-text-stroke-width: $w !important;
+    -webkit-text-stroke-color: $c !important;
+    text-stroke-width: $w !important;
+    text-stroke-color: $c !important;
+}
 // These two colors are the light and dark colors we use throughout the project, for the background, notify panel, and now playing elements
 $light-color: #f397b4;
 $dark-color: #d4688a;
 // Oooh shadows!
-$shadow-color: #e1e1e1;
+$shadow-color: #1e1e1e;
 $shadow-blur: 23px;
 @mixin shadow() {
-	text-shadow: 0px 0px $shadow-blur $shadow-color;
+    text-shadow: 0px 0px $shadow-blur $shadow-color;
 }
 // Stream overlay dimensions 
 $width: 1920px;

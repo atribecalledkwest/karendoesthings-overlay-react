@@ -1,0 +1,23 @@
+@import '../base.scss';
+
+body {
+	width: $width;
+	height: 123px;
+	font-family: $font;
+}
+
+.now-playing-element {
+	display: block;
+	width: fit-content;
+	padding: 6px 11px 11px 6px;
+	color: $text-color;
+	@include shadow($now-playing-shadow-blur);
+	&.title {
+		background-color: $light-color;
+		font-size: $now-playing-title;
+	}
+	&.song {
+		background-color: $dark-color;
+		font-size: $now-playing-song;
+	}
+}

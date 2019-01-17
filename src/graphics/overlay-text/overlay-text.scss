@@ -19,7 +19,7 @@ body {
         &.border {
             @include stroke(12px, $text-border-color);
             z-index: 1 !important;
-            @include shadow();
+            @include shadow($shadow-blur);
         }
     }
 }

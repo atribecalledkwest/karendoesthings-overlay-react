@@ -1,0 +1,33 @@
+{
+    "name": "karendoesthings-overlay",
+    "version": "0.0.1a",
+    "description": "An attempt at making a NodeCG overlay in React.",
+    "author": {
+        "name": "Karen West"
+    },
+    "nodecg": {
+        "compatibleRange": "^1.0.0",
+        "dashboardPanels": [],
+        "graphics": [
+            {
+                "file": "overlay-text.html",
+                "width": 1920,
+                "height": 1080
+            }
+        ]
+    },
+    "scripts": {
+        "build": "NODE_ENV=production node scripts/bundle.js",
+        "watch": "NODE_ENV=development node scripts/bundle.js",
+        "clean": "rm -rf graphics/ dashboard/",
+        "all": "npm run clean; npm run build"
+    },
+    "dependencies": {
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0"
+    },
+    "devDependencies": {
+        "parcel-bundler": "^1.11.0",
+        "sass": "^1.16.0"
+    }
+}

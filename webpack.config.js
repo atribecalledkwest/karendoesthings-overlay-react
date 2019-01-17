@@ -53,7 +53,7 @@ const makeConfig = (name) => {
                     filename: `${entryName}.html`,
                     chunks: [entryName],
                     title: entryName,
-                    template: `./src/${name}/${entryName}/${entryName}.html`
+                    template: `./src/${name}/${name}.html`
                 })
             })
         ]

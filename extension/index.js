@@ -1,6 +1,7 @@
 module.exports = nodecg => {
-    if(!nodecg.bundleConfig) {
+    if(Object.keys(nodecg.bundleConfig).length === 0) {
         nodecg.log.error("No bundle config provided, please supply one to enable additional features.");
+        return;
     }
     if(nodecg.bundleConfig.use.lastfm === true) {
         try {

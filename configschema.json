@@ -1,0 +1,43 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+
+	"properties": {
+		"debug": {
+			"type": "boolean",
+			"default": false
+		},
+		"use": {
+			"type": "object",
+			"properties": {
+				"lastfm": {
+					"type": "boolean",
+					"default": false
+				}
+			},
+			"required": ["lastfm"]
+		},
+		"lastfm": {
+			"type": "object",
+			"properties": {
+				"apikey": {
+					"type": "string",
+					"default": "yourlastfmapikey"
+				},
+				"sharedsecret": {
+					"type": "string",
+					"default": "yourlastfmsharedsecret"
+				},
+				"target": {
+					"type": "string",
+					"default": "targetlastfmaccount"
+				},
+                "wait": {
+                    "type": "number",
+                    "default": 5.5
+                }
+			},
+			"required": ["apikey", "sharedsecret", "target"]
+		}
+	}
+}
